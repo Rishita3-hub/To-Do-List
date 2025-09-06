@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar</title>
+  <link rel="stylesheet" href="calendarstyle.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-logo">
+        <img src="images/plannerlogo.webp" alt="Logo" class="logo-img">
+        <h2 class="logo-text">Study Planner</h2>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="assignment.html">Assignment</a></li>
+        <li><a href="test.html">Test</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Calendar Wrapper -->
+  <div class="calendar-wrapper">
+    <button class="nav-btn" onclick="prevMonth()">◀</button>
+    
+    <div id="prev" class="calendar-container side prev"></div>
+    <div id="current" class="calendar-container active"></div>
+    <div id="next" class="calendar-container side next"></div>
+    
+    <button class="nav-btn" onclick="nextMonth()">▶</button>
+  </div>
+
+  <script src="calendar_script.js"></script>
+</body>
+</html>

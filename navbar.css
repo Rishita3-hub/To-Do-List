@@ -1,0 +1,86 @@
+/* navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --primary-color: #715338;
+  --secondary-color: #ebd49f;
+  --white-color: #ffffff;
+  --font-main: 'Poppins', sans-serif;
+  --font-logo: 'Corinthia', cursive;
+  --border-radius: 15px;
+}
+
+/* Navbar */
+header {
+  background-color: var(--primary-color);
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-family: var(--font-logo);
+  font-size: 36px;
+  color: var(--white-color);
+}
+
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  margin-left: auto;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: var(--border-radius);
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    width: 100%;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .nav-link {
+    padding: 8px 0;
+  }
+}
